@@ -83,7 +83,7 @@ void ajuste(){
   Display1.setCursor(0,0);
   Display1.println("Tensao de Alimentacao");
   Display1.setCursor(0,10);
-  bat1 = analogRead(A0)*5.0*100000.0/255.0*10000.0;
+  bat1 = analogRead(A0)*5.0*100000.0/1023.0*10000.0;
   Display1.print(bat1);
   Display1.print(" V");
   
@@ -103,7 +103,7 @@ void loop(){
     Display1.setCursor(0,0);
     Display1.println("BAT1");
     Display1.setCursor(0,10);
-    bat1 = analogRead(A0)*5.0*100000.0/255.0*10000.0;
+    bat1 = analogRead(A0)*5.0*100000.0/1023.0*10000.0;
     Display1.print(bat1);
     Display1.print(" V");
     Display1.print(" / ");
@@ -121,7 +121,7 @@ void loop(){
     Display1.setCursor(0,35);
     Display1.println("BAT2");
     Display1.setCursor(0,45);
-    bat2 = analogRead(A1)*5.0*100000.0/255.0*10000.0;
+    bat2 = analogRead(A1)*5.0*100000.0/1023.0*10000.0;
     Display1.print(bat2);
     Display1.print(" V");
     Display1.print(" / ");
@@ -143,7 +143,7 @@ void loop(){
     Display2.setCursor(0,0);
     Display2.println("BAT3");
     Display2.setCursor(0,10);
-    bat3 = analogRead(A2)*5.0*100000.0/255.0*10000.0;
+    bat3 = analogRead(A2)*5.0*100000.0/1023.0*10000.0;
     Display2.print(bat3);
     Display2.print(" V");
     Display2.print(" / ");
@@ -159,7 +159,7 @@ void loop(){
     Display2.setCursor(0,35);
     Display2.println("BAT4");
     Display2.setCursor(0,45);
-    bat4 = analogRead(A3)*5.0*100000.0/255.0*10000.0;
+    bat4 = analogRead(A3)*5.0*100000.0/1023.0*10000.0;
     Display2.print(bat4);
     Display2.print(" V");
     Display2.print(" / ");
